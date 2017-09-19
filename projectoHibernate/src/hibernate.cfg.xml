@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Configurações de Conexão com o Banco de Dados -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/projecto</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+
+    <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <!-- Pool de Conexões -->
+     
+
+        <!-- Gerenciamento do Contexto das Sessões -->
+        
+
+        <!-- Cache de Segundo Nível -->
+       
+
+        <!-- Mostra as SQLs Geradas -->
+        <property name="show_sql">true</property>
+ <property name="format_sql">false</property>
+        <!-- Cria as tabelas do banco de dados -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Mapeamento das entidades -->
+        
+     
+    <mapping class="curso.hibernate.modelo.usuario1" />
+    </session-factory>
+
+</hibernate-configuration>
